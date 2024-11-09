@@ -39,7 +39,7 @@ nav a:hover {
 }
 
 main {
-  width: 80%;
+  max-width: 80%;
   height: auto;
   margin: 50px auto;
   display: flex;
@@ -92,7 +92,7 @@ section:nth-child(1) {
   position: relative;
 }
 
-.country h1 {
+.country h2 {
   text-align: center;
   border-bottom: 1px solid #243642;
   padding-bottom: 20px;
@@ -116,7 +116,6 @@ section:nth-child(1) {
 
 .flag p {
   font-family: "Edu AU VIC WA NT Pre", cursive;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-size: 18px;
   font-style: normal;
