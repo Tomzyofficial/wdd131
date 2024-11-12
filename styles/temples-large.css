@@ -1,0 +1,45 @@
+/* @media screen and (min-width: 500px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    display: flex;
+    position: relative;
+    top: 100px;
+    background: none;
+    width: 0;
+    height: 0;
+    line-height: 0;
+  }
+
+  main div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #menuButton {
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 500px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav {
+    display: flex;
+    background: none;
+    position: relative;
+    top: 0px;
+    left: 0;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  main div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
