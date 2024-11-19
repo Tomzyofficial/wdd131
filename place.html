@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Chukwuebuka Ibeh</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Chukwuebuka Ibeh, Place page">
+  <meta name="author" content="Chukwuebuka Ibeh">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="author" content="Chukwuebuka Ibeh">
+  <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lagos, Nigeria</h1>
+    <div></div>
+  </header>
+  <main>
+    <section>
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 991px)">
+        <img src="images/hero-small.webp" alt="Hero image">
+      </picture>
+    </section>
+    <section class="main-wrapper">
+      <article>
+        <h2>Data</h2>
+        <ul>
+          <li>Area: 1,171.28 sq km</li>
+          <li>Population: 10,536,000</li>
+          <li>Capital: Ikeja</li>
+          <li>Language: English</li>
+          <li>Currency: Naira</li>
+          <li>Timezone: WAT</li>
+          <li>Calling code: +234</li>
+          <li>Internet TLD: .ng</li>
+        </ul>
+      </article>
+      <article class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather_cloud.svg" alt="Weather icon">
+        <ul>
+          <li>Temperature: 10&#176;C</li>
+          <li>Conditions: Partly Cloudly</li>
+          <li>Wind: <span id="weather"></span> km/h</li>
+          <li>Wind Chill: 9.8&#176;C</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#127804; Chukwuebuka Ibeh &#127804; Lagos, Nigeria</p>
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/place.js" defer></script>
+</body>
+
+</html>

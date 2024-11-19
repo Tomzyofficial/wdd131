@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+}
+
+:root {
+  --text-color: #000;
+  --primary-color: #fff;
+  --main-bg-color: #004400;
+  --font-size: 1.5rem;
+  --font-sm: 1rem;
+  --font-family: "Roboto", serif;
+  --font-weight: 400;
+  --font-style: normal;
+  --normal-padding: 10px;
+}
+
+header h1 {
+  background-color: var(--main-bg-color);
+  height: 12vh;
+  padding: var(--normal-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+header div {
+  background-color: var(--primary-color);
+  height: 10px;
+}
+
+main {
+  position: relative;
+  height: fit-content;
+}
+
+section picture img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  /* border-bottom: 2px solid var(--main-bg-color); */
+}
+
+
+.main-wrapper {
+  margin-top: 30px;
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-wrapper h2 {
+  font-size: 3rem;
+  color: #000;
+}
+
+article:first-child {
+  border-bottom: .2px solid var(--main-bg-color);
+  padding-bottom: 20px;
+}
+
+article ul {
+  margin-top: 30px;
+  list-style: none;
+  font-size: var(--font-size);
+  line-height: 30px;
+}
+
+article:last-child img {
+  max-width: 200px;
+}
+
+footer {
+  background-color: var(--main-bg-color);
+  height: 20vh;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 991px) {
+  main {
+    height: 500px;
+  }
+
+  .main-wrapper {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+
+  .main-wrapper h2 {
+    font-size: 2rem;
+    text-align: start;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    transform: translateX(-20px);
+    color: var(--primary-color);
+  }
+
+  article ul {
+    font-size: var(--font-sm);
+  }
+
+  section article:first-child {
+    background-color: var(--primary-color);
+    opacity: .7;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    max-width: 200px;
+    width: 200px;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  section article:last-child {
+    background-color: #fff;
+    opacity: .7;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .weather h2::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/weather_cloud.svg");
+    width: 50px;
+    height: 50px;
+    left: 130px;
+    top: 5px;
+    display: block;
+
+  }
+
+  article:last-child img {
+    display: none;
+  }
+
+}
