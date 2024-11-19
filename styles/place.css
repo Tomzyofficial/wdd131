@@ -134,7 +134,7 @@ footer {
     padding: 10px;
   }
 
-  .weather h2::before {
+  .weather h2::after {
     content: '';
     position: absolute;
     background-image: url("../images/weather_cloud.svg");
