@@ -98,7 +98,7 @@ input[type="submit"]:active {
 
 footer {
   background-color: var(--secondary-color);
-  height: 10h;
+  height: 10vh;
   width: 40%;
   margin: 0 auto;
   color: var(--color);
