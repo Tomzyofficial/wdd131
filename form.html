@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Chukwuebuka Ibeh</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Chukwuebuka Ibeh, form page">
+  <meta name="author" content="Chukwuebuka Ibeh">
+  <link rel="stylesheet" href="styles/form.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Product Review</h3>
+    <form action="review.html" method="get">
+
+      <fieldset>
+        <label for="product">Product name <span>*</span></label>
+        <select name="product" id="product" required>
+          <option value="Choose an Product ..." disabled selected>Choose a Product ...</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="rating">
+        <label for="rating-1">Overall Rating</label>
+        <!-- <label for="rating" class="rating"></label> -->
+        <div id="rating-group">
+          <div>
+            <label>
+              &star;
+              <input type="radio" name="rating" id="rating-1" required>
+            </label>
+          </div>
+          <div>
+            <label>
+              &star;&star;
+              <input type="radio" name="rating" id="rating-2" required>
+            </label>
+          </div>
+          <div>
+            <label>
+              &star;&star;&star;
+              <input type="radio" name="rating" id="rating-3" required>
+            </label>
+          </div>
+          <div>
+            <label>
+              &star;&star;&star;&star;
+              <input type="radio" name="rating" id="rating-4" required>
+            </label>
+          </div>
+          <div>
+            <label>
+              &star;&star;&star;&star;&star;
+              <input type="radio" name="rating" id="rating-5" required>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="install-date">
+        <label for="install">Date of Installment<span>*</span></label>
+        <input type="date" name="install" id="install" required>
+      </fieldset>
+
+      <fieldset class="useful-features">
+        <label for="durability">Which features do you find useful in the product? <br>
+          (Check all that apply)
+        </label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="durability" id="durability" value="Durability"> Durability
+          </label>
+          <label>
+            <input type="checkbox" name="ease-of-use" id="ease-of-use" value="Ease of Use">
+            Ease of Use
+          </label>
+          <label>
+            <input type="checkbox" name="performance" id="performance" value="Performance">
+            Performance
+          </label>
+          <label>
+            <input type="checkbox" name="design" id="design" value="Design">
+            Design
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="review-text">
+        <label for="review-text">Written Review (Optional)</label>
+        <textarea name="review-text" id="review-text"></textarea>
+      </fieldset>
+
+      <fieldset class="name">
+        <label for="name">Your name (Optional)</label>
+        <input type="text" name="name" id="name" autocomplete="on">
+      </fieldset>
+
+      <input type="submit" value="Post Review">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#127804; Chukwuebuka Ibeh &#127804; Nigeria</p>
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/form.js" defer></script>
+</body>
+
+</html>

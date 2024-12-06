@@ -1,0 +1,117 @@
+:root {
+  --secondary-color: rgb(59, 22, 59);
+  --color: #fff;
+  --bg-color: #ccc;
+  --linear-color: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+  --hover-color: lightgreen;
+  --footer-color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+
+.container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  background-color: var(--secondary-color);
+  margin-bottom: 10px;
+  height: 10vh;
+}
+
+.container form {
+  background-color: var(--bg-color);
+  height: fit-content;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+form select,
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+  outline: none;
+  border: transparent;
+}
+
+#rating-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+
+#rating-group input {
+  display: block;
+  margin: 0 auto;
+}
+
+.checkbox-group {
+  margin-top: 5px;
+}
+
+.checkbox-group label {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  outline: none;
+  border: transparent;
+}
+
+.rating,
+.install-date,
+.useful-features,
+.review-text,
+.name {
+  margin-top: 20px;
+  display: block;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  background-color: rgb(29, 94, 29);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  height: 10h;
+  width: 40%;
+  margin: 0 auto;
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p:last-child {
+  color: var(--footer-color);
+}
+
+fieldset {
+  border: none;
+}
