@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomzywork4u - contact</title>
+  <meta name="description"
+    content="I'm a web software developer with an eye for quality designs and a problem solver.  Ibeh">
+  <meta name="Tomzywork4u"
+    content="I'm a web software developer with an eye for quality designs and a problem solver.  Ibeh">
+  <link rel="icon" href="images/logo3.webp">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <!-- <script src="script/jquery-3.6.0.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+  <!-- navigation header -->
+  <header>
+    <a href="index.html"><img src="images/logo3.webp" class="logo" alt="logo"></a>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about me</a></li>
+      <li><a href="contact.html" class="active">contact</a></li>
+    </ul>
+    <!-- menu icon hamburger -->
+    <div class="menu-btn">
+      <div class="menu-btn-burger"></div>
+    </div>
+  </header>
+  <!-- hero section -->
+  <section>
+    <div class="wrapper banner-content">
+      <div class="wrapper-word">
+        <h3 id="wrapper">Contact me<h3>
+            <h6>Let's talk</h6>
+      </div>
+      <!-- site loader -->
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="loader-inner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- page content -->
+  <section>
+    <div id="form-container">
+      <div class="contact-form">
+        <h3>Send message</h3>
+        <h4>Contact Me and be sure of a solution!</h5>
+          <form action="appreciate.html" method="GET">
+            <fieldset>
+              <label for="fname">Full Name<span>*</span></label>
+              <input type="text" name="name" id="fname" autocomplete="on" required>
+            </fieldset>
+
+            <fieldset class="country">
+              <label for="country">Your country<span>*</span></label>
+              <input type="text" name="country" id="country" autocomplete="on" required>
+            </fieldset>
+
+            <fieldset class="install-date">
+              <label for="email">Your email address<span>*</span></label>
+              <input type="email" name="email" id="email" autocomplete="on" required>
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Request Quote">
+          </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-stamp">
+        <div class="site-year">Tomzywork4u &copy; <span id="footer-year">2021</span></div>
+      </div>
+    </div>
+    <!-- back to top -->
+    <div class="back-to-top" id="scroll-top" onclick="myFunction()" title="Back to top">
+      <div class="top"></div>
+    </div>
+  </footer>
+  <script src="script/app.js"></script>
+  <script src="script/submission.js"></script>
+</body>
+
+</html>
